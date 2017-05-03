@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{ragged2e}
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
 \restylefloat{table}
@@ -28,9 +29,17 @@
 
 \frontmatter
 
-\input{sections/portada.tex}
-
+\input{estructura/portada.tex}
 \newpage
+\input{estructura/dedicatoria.tex}
+\newpage
+\input{estructura/agradecimientos.tex}
+\newpage
+\input{estructura/resumen.tex}
+\newpage
+
+
+
 
 \tableofcontents
 \listoffigures
@@ -41,12 +50,12 @@
 
 \mainmatter
 
-\input{sections/introduccion.tex}
+\input{estructura/introduccion.tex}
 \input{sections/problema_investigacion.tex}
 \input{sections/marco_conceptual.tex}
 \input{sections/marco_metodologico.tex}
 \input{sections/marco_aplicativo.tex}|
-\input{sections/conclusion.tex}
+\input{estructura/conclusion.tex}
 
 
 \nocite{*}
