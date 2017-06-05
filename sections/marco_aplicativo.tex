@@ -43,8 +43,77 @@
 \setlength{\parskip}{0mm}
 
 \subsection{Listado de tablas de la aplicación}
+
 \setlength{\parskip}{5mm}
+
+A continuación se presenta un listado con todas las tablas de la base de datos perteneciente al sistema desarrollado, junto con una breve descripción para cada una:
+
+
+\textbf{-registro\_status}: Permite clasificar el estado del usuario (Activo,Inactivo).
+
+\textbf{-registro\_tipousuario}: Permite clasificar a los usuarios por tipo (Administrador, Cliente, Taquilla).
+
+\textbf{-registro\_usuario}: Permite almacenar los usuarios en el sistema.
+
+\textbf{-rcs\_accesoriosbase}: Permite almacenar los accesorios basicos de la planilla.
+
+\textbf{-rcs\_accesoriosvehiculo}: Tabla utilizada para representar los accesorios base de un vehiculo.
+
+\textbf{-rcs\_condicionesgeneralesbase}: Permite almacenar las condiciones generales basicas de la planilla.
+
+\textbf{-rcs\_condicionesgeneralesvehiculo}: Tabla utilizada para representar las condiciones generales base de un vehiculo.
+
+\textbf{-rcs\_detallesdatos}: Perminte almacenar lo detalles y datos de la planilla.
+
+\textbf{-rcs\_documentospresentados}: Permite almacenar los documentos presentados basicos de la planilla.
+
+\textbf{-rcs\_documentospresentadosbase}: Tabla utilizada para representar los documentos presentados base de un vehiculo.
+
+\textbf{-rcs\_estadosolicitud}: Permite almacenar los diferentes estado que puede poseer la planilla (Abierta, Por Revisar,Cerrada).
+
+\textbf{-rcs\_estadovehiculo}: Permite almacenar los diferentes estado que puede poseer las partes del vehiculo (Bueno, Regular,Malo).
+
+\textbf{-rcs\_mecanicabase}: Permite almacenar las mecanicas basicas de la planilla.
+
+\textbf{-rcs\_mecanicavehiculo}: Tabla utilizada para representar las mecanicas base de un vehiculo.
+
+\textbf{-rcs\_motivosolicitud}: Permite almacenar los diferentes motivos por lo cual se realiza la solicitud de inspección.
+
+\textbf{-rcs\_solicitudinspeccion}: Permite almacenar las solicitudes de inspección realizadas por el sistema.
+
+\textbf{-rcs\_tipomanejo}: Permite almacenar los diferentes tipos de manejo (Automatico, Sincronico).
+
+\textbf{-rcs\_tipovehiculo}: Permite guardar la informacion de los diferentes tipos de vehículos (Sedan, Carga, Coupe)
+
+\textbf{-rcs\_titularvehiculo}: Perminte almacenar la informacion referente a los titulares de los vehiculos.
+
+\textbf{-rcs\_trajovehiculo}: Permite almacenar la informacion de las personas que trajeron el vehiculo a inspeccion en lugar del titular del titular.
+
+\textbf{-rcs\_vehiculo}: Permite almacenar la informacion referente al vehiculo.
+
+\textbf{-rcs\_vehiculo\_accesorios\_vehiculo}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_accesoriosvehiculo y vehiculo.
+
+\textbf{-rcs\_vehiculo\_condiciones\_generales\_vehiculo}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_condicionesgeneralesvehiculo y vehiculo.
+
+\textbf{-rcs\_vehiculo\_detalles\_datos}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_detallesdatos y vehiculo.
+
+\textbf{-rcs\_vehiculo\_documentos\_presentados}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_documentospresentados y vehiculo.
+
+\textbf{-rcs\_vehiculo\_mecanica\_vehiculo}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_mecanicavehiculo y vehiculo.
+
+\textbf{-django\_migrations}: Permite almacenar y llevar un control de las
+migraciones aplicadas para cambiar la base de datos a lo largo del proceso de
+desarrollo.
+
+\textbf{-django\_session}: Permite almacenar todos los valores usados en la sesión
+de los usuarios dentro de la aplicación.
+
+
 \setlength{\parskip}{0mm}
+
+
+
+
 
 \subsection{Modelo de datos}
 \setlength{\parskip}{5mm}
