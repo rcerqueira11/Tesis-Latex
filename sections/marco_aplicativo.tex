@@ -6,13 +6,159 @@
 \setlength{\parskip}{0mm}
 
 
-\section{Aplicación de la metodología Scrum con Agilus } 
+\section{Aplicación de la metodología Scrum}
+
+\subsection{Lista de Objetivos (Pila del Producto)}
 \setlength{\parskip}{5mm}
+
+
+\begin{table}[htb]	
+\begin{center}
+\begin{tabular}{ | m{8cm} | m{8cm}| m{8cm}| } 
+ \hline
+ Sprint & Actividad & Fecha \\
+ \hline
+ 1. & 
+ \begin{itemize}
+ 	\item Instalación de las herramientas de desarrollo necesarias.
+ 	\item Configuración de los ambientes de desarrollo.
+ 	\item Maquetado de las Interfaces
+ 	\item Elaboración del Diagrama de Modelo relacional para la base de datos.
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 2. & 
+ \begin{itemize}
+ 	\item Desarrollo del modulo de registro.
+ 	\item Realización de pruebas de funcionalidad.
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 3. & 
+ \begin{itemize}
+ 	\item Desarrollo de la funcionalidad de recuperar contraseña
+ 	\item Desarrollo del modulo de gestión de solicitudes
+ 	\item Desarrollo de la funcionalidad de solicitar inspección
+ 	\item Realización de pruebas de funcionalidad
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 4. & 
+ \begin{itemize}
+ 	\item Desarrollo de la funcionalidad de gestión de tickets de solicitudes de inspección
+ 	\item Desarrollo de la funcionalidad de consultar solicitudes de inspección
+ 	\item Realización de pruebas de funcionalidad
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 5. & 
+ \begin{itemize}
+ 	\item Desarrollo de la funcionalidad de realizar inspección
+ 	\item Desarrollo de la funcionalidad de gestionar inspección
+ 	\item Desarrollo de la funcionalidad de generación de pdf
+ 	\item Realización de pruebas de funcionalidad
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 6. & 
+ \begin{itemize}
+ 	\item Desarrollo del modulo administrativo
+ 	\item Desarrollo de la funcionalidad de Gestión de Usuarios (Taquilla Inspectores)
+ 	\item Realización de pruebas de funcionalidad
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 7. & 
+ \begin{itemize}
+ 	\item Desarrollo de la funcionalidad de Gestión de Titulares de Vehículo
+ 	\item Desarrollo de la funcionalidad de Gestión de Personas que trajeron el Vehículo a la inspección
+ 	\item Realización de pruebas de funcionalidad
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+ 8. & 
+ \begin{itemize}
+ 	\item Desarrollo del Vehículo en formato SVG
+ 	\item Realización de pruebas de funcionalidad
+ \end{itemize}
+
+
+ & faltafecha.\\
+ \hline
+\end{tabular}
+\caption{Pila_del_Producto}
+\label{Tabla:15}
+\end{center}
+\end{table}	
+
+
+
+\setlength{\parskip}{0mm}
+
+
+\subsection{Lista de tareas de la iteración (Pila del Sprint)}
+\setlength{\parskip}{5mm}
+
+\textbf{-Sprint 1}: 
+
+
+\textbf{-Sprint 2}: En este Sprint se desarrollaron parte de las funcionalidades pertinentes al modulo de registro, con sus validaciones respectivas para el correcto funcionamiento del sistema de registro. Luego se realizacion las pruebas de funcionalidad correspondientes para validar el funcionamiento esperado del sistema.
+
+\textbf{-Sprint 3}: En este Sprint se terminaron de desarrollar las funcionalidades restantes del modulo de registro, se empezo el desarrollo del modulo de gestion de solicitudes, en el cual se implementaron parte de las funcionalidades tales como el solicitar una inspección. Ademas se realizaron las pruebas pertinentes para el correcto funcionamiento de la aplicacion.
+
+\textbf{-Sprint 4}: Se realizaron las funcionalidades de gestion de tickets de solicitud de inspección y consultar solicitudes de inspección, en esta ultima se obtuvieron las especificaciones de los campos por los cuales se filtrarian dichas solicitudes. Luego se realizaron las pruebas necesarias para validar el correcto funcionamiento de las funcionalidades desarrolladas.
+
+\textbf{-Sprint 5}: En este Sprint se desarrollaron las funcionalidades de realizar inspeccion y la gestion de las mismas, ademas de la generacion de la planilla en la cual se registran todos los datos de las especificaciones del vehículo e informacion relevante de la inspeccion. Se realizaron las pruebas funcionales para validar el correcto funcionamiento.
+
+\textbf{-Sprint 6}: En este Sprint se desarrollo parte del modulo de admnistración, en especifico la funcionalidad de gestion de usuarios que comprende en editar, inactivar y eliminar usuarios. Ademas se realizaron las pruebas pertinentes para garatizar la correcta funcionalidad.
+
+\textbf{-Sprint 7}: Se desarrollaron las funcionalidades faltantes del modulo de administracion, gestion de los titulares del vehículo y de las personas que trajeron el vehículo a inspeccionar. Seguidamente se realizaron las pruebas funcionales para validar un correcto funcionamiento.
+
+\textbf{-Sprint 8}: Se desarrollo la imagen del carro en formato SVG y se validaron las partes pertinente para que cambiaran de color dependiendo del estado del vehículo. Se realizaron las pruebas correspondientes para finalizar la planilla de inspeccion.
+
 \setlength{\parskip}{0mm}
 
 
 \section{Requerimientos del Sistema } 
 \setlength{\parskip}{5mm}
+	De acuerdo a los requerimientos definidos por el cliente (Product Owner), se establecio las siguiente clasificacion:
+
+	\textbf{-Requerimientos Funcionales}: 
+
+	\begin{itemize}
+		\item Registro de usuarios por roles.
+		\item Recuperar contraseña.
+		\item Edicion del perfil de usuario.
+		\item Administracion de los usuarios del sistema.
+		\item Administracion de los clientes del sistema (Titular, Persona que trajo el Vehículo).
+		\item Creacion de tickets para la inspeccion del vehículo.
+		\item Consultar tickets creados.
+		\item Consultar solicitudes de inspeccion.
+		\item Registro de los datos de la inspeccion del vehículo.
+		\item Gestionar solicitudes de inspeccion.
+		\item Creacion de una imagen de carro donde se muestren diferentes colores, para las partes del carro, dependiendo su estado.
+	\end{itemize}
+
+	\textbf{-Requerimientos no Funcionales}: 
+
+	\begin{itemize}
+		\item Validar las entradas de los datos para el correcto funcionamiento del sistema.
+	\end{itemize}
+
 \setlength{\parskip}{0mm}
 
 
@@ -23,9 +169,9 @@
 	\begin{itemize}
 		\item Busqueda de usuarios del sistema.
 		\item Busqueda de titulares de los vehiculos.
-		\item Busqueda de personas trajeron el vehiculo a revision. 
+		\item Busqueda de personas trajeron el vehículo a revision. 
 		\item Edición de titulares de vehiculos.
-		\item Edición de personas trajeron el vehiculo a revision.
+		\item Edición de personas trajeron el vehículo a revision.
 		\item Edición y desactivación de usuarios Inspectores.
 		\item Edición y desactivación de usuarios Taquilla.
 		\item Reinicio de usuarios enviadoles nuevas contraseñas.
@@ -35,7 +181,7 @@
 	\begin{itemize}
 		\item Creación y edición de una cuenta con su información básica para el uso del sistema.
 		\item Visualizacion de las solicitudes de inspección pendientes por realizar.
-		\item Vaciado de la informacion de la inspección del vehiculo en el sistema.
+		\item Vaciado de la informacion de la inspección del vehículo en el sistema.
 		\item Gestion de la solicitud de inspección (verificación y guardado). 
 		\item Visualizar informacion de las solicitudes de inspección.
 		\item Busqueda de solicitudes de inspección realizadas.
