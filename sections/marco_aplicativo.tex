@@ -359,13 +359,14 @@ A partir de esta interfaz los usuarios registrados en el sistema podrán loguear
 
 \textbf{-Interfaz de recuperar contraseña}: La figura a continuación muestra el formulario de recuperación de contraseña para aquellos usuarios registrados en el sistema.
 
-%\begin{figure}
-%\begin{center}
-%	\includegraphics[width=14cm,height=8cm]{img/interfaces/recuperar_contrasena.png}
-%\end{center}
-%\caption{Interfaz de Recuperar Contraseña. Fuente:Print %Screen.}
-%\label{fig:interfaz_recuperar_contraseña}
-%\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=7cm]{img/interfaces/recuperar_contrasena.png}
+\end{center}
+\caption{Interfaz de Recuperar Contraseña. Fuente: Print Screen.}
+\label{fig:interfaz_recuperar_contrasena}
+\end{figure}
 
 A partir de esta interfaz los usuarios registrados en el sistema podrán recuperar su contraseña mediante el formulario incluyendo su correo y cédula. Se generara una contraseña aleatoria que sera enviada a su correo con la cual podrán acceder al sistema, para luego cambiar su contraseña a una propia.
 
@@ -374,9 +375,9 @@ A partir de esta interfaz los usuarios registrados en el sistema podrán recuper
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=14cm,height=8cm]{img/interfaces/registro_usuario.png}
+	\includegraphics[width=14cm,height=7cm]{img/interfaces/registro_usuario.png}
 \end{center}
-\caption{Interfaz de Registro de Usuarios. Fuente:Print Screen.}
+\caption{Interfaz de Registro de Usuarios. Fuente: Print Screen.}
 \label{fig:interfaz_registro_usuario}
 \end{figure}
 
@@ -389,46 +390,47 @@ En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o com
 \begin{center}
 	\includegraphics[width=14cm,height=8cm]{img/interfaces/registro_usuario.png}
 \end{center}
-\caption{Interfaz de Registro de Usuarios. Fuente:Print Screen.}
+\caption{Interfaz de Registro de Usuarios. Fuente: Print Screen.}
 \label{fig:interfaz_registro_usuario}
 \end{figure}
 
 En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o como usuarios Taquilla, ingresando su información personal.
 
 
-\textbf{-Interfaz Configuración de Perfil }: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
+\textbf{-Interfaz Configuración de Perfil}: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
 
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=12cm,height=8cm]{img/interfaces/editar_usuario.png}
 \end{center}
-\caption{Interfaz de Configuración del Perfil de Usuario. Fuente:Print Screen.}
+\caption{Interfaz de Configuración del Perfil de Usuario. Fuente: Print Screen.}
 \label{fig:interfaz_configuracion_usuario}
 \end{figure}
 
 En esta interfaz los usuarios pueden modificar su información personal ya sea el correo o contraseña.
 
 
-\textbf{-Interfaz Administrador Edición de Usuarios }: La figura a continuación muestra el filtro y bandeja de los usuarios registrados en el sistema.
+\textbf{-Interfaz Administrador bandeja de Usuarios}: La figura a continuación muestra el filtro y bandeja de los usuarios registrados en el sistema.
 
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=\textwidth,height=7cm]{img/interfaces/bandeja_edicion_usuarios.png}
 \end{center}
-\caption{Interfaz de bandeja edición usuario por Administrador. Fuente:Print Screen.}
+\caption{Interfaz de bandeja edición usuario por Administrador. Fuente: Print Screen.}
 \label{fig:interfaz_bandeja_edicion_usuario}
 \end{figure}
 
 En esta interfaz los usuarios pueden ser modificados, inactivados y eliminados. Inactivados siempre y cuando no tengan una solicitud de inspección en proceso y eliminado siempre y cuando no tengan ninguna solicitud asociada al mismo.
 
 
-\textbf{-Modal Inactivar Usuario }: La figura a continuación muestra el modal de confirmación para inactivar un usuario.
+
+\textbf{-Modal Inactivar Usuario}: La figura a continuación muestra el modal de confirmación para inactivar un usuario.
 
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_inactivar_usuario.png}
 \end{center}
-\caption{Modal Inactivar Usuario. Fuente:Print Screen.}
+\caption{Modal Inactivar Usuario. Fuente: Print Screen.}
 \label{fig:modal_confirmacion_inactivar_usuario}
 \end{figure}
 
@@ -438,13 +440,205 @@ En esta interfaz los usuarios pueden ser modificados, inactivados y eliminados. 
 \begin{center}
 	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_eliminar_usuario.png}
 \end{center}
-\caption{Modal Eliminar Usuario. Fuente:Print Screen.}
+\caption{Modal Eliminar Usuario. Fuente: Print Screen.}
 \label{fig:modal_confirmacion_eliminar_usuario}
 \end{figure}
 
 
+\textbf{-Interfaz Administrador Edición de Usuarios}: La figura a continuación muestra el formulario de edición de usuario por parte del administrador.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=6cm]{img/interfaces/editar_usuario_admin.png}
+\end{center}
+\caption{Interfaz de edición de usuario por Administrador. Fuente: Print Screen.}
+\label{fig:interfaz_edicion_usuario_administrador}
+\end{figure}
+
+En esta interfaz el administrador puede cambiar tanto el nombre como el correo, el nombre no puede ser cambiado si el inspector ya proceso alguna solicitud. Además esta la función de reiniciar el usuario, el cual funciona como el recuperar contraseña en caso de que el usuario haya olvidado su correo o usuario registrado.
 
 
+\textbf{-Interfaz creación de solicitud de inspección}: La figura a continuación muestra el formulario para la creación de una solicitud de inspección.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/interfaces/crear_ticket_solicitud.png}
+\end{center}
+\caption{Interfaz de creación de solicitud de inspección. Fuente: Print Screen.}
+\label{fig:interfaz_crear_solicitud_inspeccion}
+\end{figure}
+
+En esta interfaz el usuario Taquilla puede crear una solicitud de inspección con los datos del cliente, en caso de que el cliente exista, se llenan automáticamente al incluir la cédula. En caso de que no este el Titular se incluyen también los datos de la persona que trajo el vehículo a inspección.
+
+
+\textbf{-Modal crear solicitud de inspección }: La figura a continuación muestra el modal de confirmación para crear una solicitud de inspección.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_confirmar_creacion_solicitud.png}
+\end{center}
+\caption{Modal crear solicitud de inspección. Fuente: Print Screen.}
+\label{fig:modal_confirmacion_crear_solicitud}
+\end{figure}
+
+
+
+\textbf{-Interfaz Taquilla bandeja de solicitudes}: La figura a continuación muestra el filtro y bandeja de las solicitudes de inspección creadas recientemente.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/interfaces/bandeja_solicitudes_creadas.png}
+\end{center}
+\caption{Interfaz de bandeja solicitudes de inspección por Taquilla. Fuente: Print Screen.}
+\label{fig:interfaz_bandeja_solicitudes_inspeccion_taquilla}
+\end{figure}
+
+En esta interfaz los usuarios taquilla pueden cancelar una solicitud de inspección siempre y cuando esta no este siendo atendida por algún inspector.
+
+
+
+\textbf{-Modal eliminar solicitud de inspección}: La figura a continuación muestra el modal de confirmación para eliminar una solicitud de inspección.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_confirmacion_eliminar_solicitud_creada.png}
+\end{center}
+\caption{Modal eliminar solicitud de inspección. Fuente: Print Screen.}
+\label{fig:modal_confirmacion_eliminar_solicitud}
+\end{figure}
+
+
+\textbf{-Interfaz Inspectores bandeja de solicitudes}: La figura a continuación muestra el filtro y bandeja de las solicitudes de inspección creadas.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/interfaces/bandeja_solicitudes_creadas_inspector.png}
+\end{center}
+\caption{Interfaz de bandeja solicitudes de inspección usuario Inspector. Fuente: Print Screen.}
+\label{fig:interfaz_bandeja_solicitudes_inspeccion_inspector}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los datos de la inspección realizada, gestionar la solicitud de inspección y visualizar el documento generado por la solicitud.
+
+\textbf{-Interfaz registro datos del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos del vehículo.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/interfaces/registro_datos_vehiculo.png}
+\end{center}
+\caption{Interfaz del formulario de registro de los datos del vehículo. Fuente: Print Screen.}
+\label{fig:interfaz_registro_datos_vehiculo}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los datos del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+
+\textbf{-Interfaz mecánica del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de condiciones generales del vehículo.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=16cm]{img/interfaces/registro_condiciones_generales_vehiculo.png}
+\end{center}
+\caption{Interfaz del formulario de registro de condiciones generales del vehículo. Fuente: Print Screen.}
+\label{fig:interfaz_registro_condiciones_vehiculo}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los datos de las condiciones generales del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+
+\textbf{-Interfaz mecánica del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de la mecánica vehículo.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=6cm]{img/interfaces/registro_mecanica_vehiculo.png}
+\end{center}
+\caption{Interfaz del formulario de registro de la mecánica del vehículo. Fuente: Print Screen.}
+\label{fig:interfaz_registro_mecanica_vehiculo}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los datos de la mecánica vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+\textbf{-Interfaz accesorios del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de los accesorios vehículo.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=16cm]{img/interfaces/registro_accesorios_vehiculo.png}
+\end{center}
+\caption{Interfaz del formulario de registro de los accesorios del vehículo. Fuente: Print Screen.}
+\label{fig:interfaz_registro_accesorios_vehiculo}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los datos de los accesorios del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+
+\textbf{-Interfaz detalles y datos del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los detalles y datos del vehículo.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=6cm]{img/interfaces/registro_detalles_datos_vehiculo.png}
+\end{center}
+\caption{Interfaz del formulario de registro de los detalles y datos del vehículo. Fuente: Print Screen.}
+\label{fig:interfaz_registro_detalles_datos_vehiculo}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los detalles y datos del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+\textbf{-Interfaz documentos del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los documentos traídos del vehículo.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=6cm]{img/interfaces/registro_documentos_presentados_vehiculo.png}
+\end{center}
+\caption{Interfaz del formulario de registro de los documentos del vehículo. Fuente: Print Screen.}
+\label{fig:interfaz_registro_documentos_vehiculo}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden registrar los documentos que trajeron del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+\textbf{-Interfaz vista previa de la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de las observaciones referente a la inspección del vehículo y una vista previa de como quedara la solicitud.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=18cm]{img/interfaces/prev_planilla_1.png}
+\end{center}
+\caption{Interfaz de la vista previa de los datos del vehículo (Parte 1). Fuente: Print Screen.}
+\label{fig:interfaz_vista_previa_vehiculo_1}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=18cm]{img/interfaces/prev_planilla_2.png}
+\end{center}
+\caption{Interfaz de la vista previa de los datos del vehículo (Parte 2). Fuente: Print Screen.}
+\label{fig:interfaz_vista_previa_vehiculo_2}
+\end{figure}
+
+En esta interfaz los usuarios inspector pueden verificar todo los datos del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
+
+
+\textbf{-Modal finalizar registro de inspección}: La figura a continuación muestra el modal de confirmación para registrar los datos de una solicitud de inspección.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_finalizar_inspeccion.png}
+\end{center}
+\caption{Modal finalizar la solicitud de inspección. Fuente: Print Screen.}
+\label{fig:modal_finalizar_registro_dato_solicitud}
+\end{figure}
+
+\setlength{\parskip}{0mm}
+
+
+
+\textbf{-Modal finalizar gestión de inspección}: La figura a continuación muestra el modal de confirmación para finalizar la solicitud de inspección de manera definitiva.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_finalizar_gestion.png}
+\end{center}
+\caption{Modal finalizar la solicitud de inspección. Fuente: Print Screen.}
+\label{fig:modal_finalizar_gestion_dato_solicitud}
+\end{figure}
 
 \setlength{\parskip}{0mm}
 
