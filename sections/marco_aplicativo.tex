@@ -599,7 +599,7 @@ En esta interfaz los usuarios inspector pueden registrar los documentos que traj
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=\textwidth,height=18cm]{img/interfaces/prev_planilla_1.png}
+	\includegraphics[width=\textwidth,height=19cm]{img/interfaces/prev_planilla_1.png}
 \end{center}
 \caption{Interfaz de la vista previa de los datos del vehículo (Parte 1). Fuente: Print Screen.}
 \label{fig:interfaz_vista_previa_vehiculo_1}
@@ -607,7 +607,7 @@ En esta interfaz los usuarios inspector pueden registrar los documentos que traj
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=\textwidth,height=18cm]{img/interfaces/prev_planilla_2.png}
+	\includegraphics[width=\textwidth,height=19cm]{img/interfaces/prev_planilla_2.png}
 \end{center}
 \caption{Interfaz de la vista previa de los datos del vehículo (Parte 2). Fuente: Print Screen.}
 \label{fig:interfaz_vista_previa_vehiculo_2}
@@ -645,15 +645,229 @@ En esta interfaz los usuarios inspector pueden verificar todo los datos del veh�
 
 
 
-\section{Fase de pruebas maybe } 
+\section{Fase de pruebas } 
 \setlength{\parskip}{5mm}
+Las pruebas realizadas para verificar el correcto funcionamiento del sistema y la aceptación de los usuarios por el mismo se dividieron en dos (2) partes a continuación se explica detalladamente las mismas.
+
 \setlength{\parskip}{0mm}
+
 
 
 \subsection{Pruebas funcionales}
 \setlength{\parskip}{5mm}
+
+
+Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se especifican los módulos pertenecientes al sistema y las funcionalidades que debería tener cada uno de ellos, estas fueron probadas por usuarios especialmente seleccionados que poseyeran un criterio de evaluación acertijo y critico en cuanto a los resultados. 
+\setlength{\parskip}{0mm}
+
+\begin{table}[H]	
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{8cm}| m{3cm}| } 
+ \hline
+ Modulo & Funcionalidades Probadas & Resultados \\
+ \hline
+ Administración. 
+ & 
+ \begin{itemize}
+ 	\item Modificacion de Usuarios.
+ 	\item Modificacion de Clientes.
+ \end{itemize}. 
+ & 
+ .\\
+
+ \hline
+ Registro. 
+ & 
+ \begin{itemize}
+ 	\item Registrar cuenta
+ \end{itemize}. 
+ & 
+ .\\
+
+ \hline
+ Perfil. 
+ & 
+ \begin{itemize}
+ 	\item Editar información del usuario
+ \end{itemize}. 
+ & 
+ .\\
+
+ \hline
+ Recuperar Contraseña.
+ & 
+ \begin{itemize}
+ 	\item Recuperar Contraseña 
+ \end{itemize}. 
+ & 
+ .\\
+
+ \hline
+
+ Consulta. 
+ & 
+ \begin{itemize}
+ 	\item Consultar solicitudes creadas.
+ 	\item Consultar Usuarios de la aplicación.
+ 	\item Consultar titulares de carros.
+ 	\item Consultar personas que trajeron el vehículo a la inspección. 
+ \end{itemize}. 
+ & 
+ .\\
+
+  \hline
+ Solicitud. 
+ & 
+ \begin{itemize}
+ 	\item Realizar solicitud de inspección
+ \end{itemize}. 
+ & 
+ .\\
+
+ \hline
+ Gestión de Solicitudes. 
+ & 
+ \begin{itemize}
+ 	\item Registrar los datos de la solicitud de inspección
+ 	\item Gestionar la solicitud de inspección
+ \end{itemize}. 
+ & 
+ .\\
+
+ \hline
+\end{tabular}
+\caption{Instrumento evaluación módulos del sistema. Fuente: El autor}
+\label{Tabla:6}
+\end{center}
+\end{table}	
+
+\setlength{\parskip}{5mm}
+
+Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta lograr la completa aprobación de lo módulos.
+
+\begin{table}[H]	
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{4.5cm} | m{4.5cm}| m{4.5cm}| } 
+ \hline
+  & \multicolumn{3}{|c|}{Ciclo de Prueba}  \\
+ \hline
+ Usuario. & 1. & 2. & 3.\\
+ \hline
+ 1. 
+ & 
+ \begin{itemize}
+ 	\item 3 módulos aprobados
+ 	\item 4 módulos no aprobados
+ \end{itemize}. 
+ & 
+ \begin{itemize}
+ 	\item 5 módulos aprobados
+ 	\item 2 módulos no aprobados
+ \end{itemize}.
+ & 
+ \begin{itemize}
+ 	\item 7 módulos aprobados.
+ \end{itemize}.\\
+ \hline
+ 2. 
+ & 
+ \begin{itemize}
+ 	\item 3 módulos aprobados
+ 	\item 4 módulos no aprobados
+ \end{itemize}. 
+ & 
+ \begin{itemize}
+ 	\item 5 módulos aprobados
+ 	\item 2 módulos no aprobados
+ \end{itemize}.
+ & 
+ \begin{itemize}
+ 	\item 7 módulos aprobados.
+ \end{itemize}.\\
+ \hline
+ 3. 
+ & 
+ \begin{itemize}
+ 	\item 3 módulos aprobados
+ 	\item 4 módulos no aprobados
+ \end{itemize}. 
+ & 
+ \begin{itemize}
+ 	\item 5 módulos aprobados
+ 	\item 2 módulos no aprobados
+ \end{itemize}.
+ & 
+ \begin{itemize}
+ 	\item 7 módulos aprobados.
+ \end{itemize}.\\
+ \hline
+\end{tabular}
+\caption{Matriz de ciclos de pruebas. Fuente: El autor}
+\label{Tabla:7}
+\end{center}
+\end{table}
+
+
+\textbf{-Ciclo 1}: 
+\begin{itemize}
+	\item Usuario 1: de los 7 modulos probados, 4 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	 \begin{itemize}
+			\item  El correo no se enviaba correctamente a los usuarios registrados.
+			\item  Campos numericos aceptaban caracteres.
+			\item  Datos de las solicitudes de inspeccion siempre se precargaban los mismos, y cuando se cambia en algun cliente se cambian en todos.
+			\item  Inactivar usuarios.
+		  \end{itemize}
+
+	\item Usuario 2: de los 7 modulos probados, 4 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	 \begin{itemize}
+			\item  El correo no se enviaba correctamente a los usuarios registrados.
+			\item  Campos numericos aceptaban caracteres.
+			\item  Inactivar usuarios.
+			\item  Datos inconsistentes en diferentes solicitudes de inspeccion.
+		  \end{itemize}
+
+	\item Usuario 3: de los 7 modulos probados, 4 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	 \begin{itemize}
+			\item  No llega el correo al registrar el usuario
+			\item  Error en montos al colocar caractere.
+			\item  Datos de las solicitudes de inspeccion siempre se precargaban los mismos, y cuando se cambia en algun cliente se cambian en todos.
+			\item  Inactivar usuarios.
+		  \end{itemize}
+
+\end{itemize}
+
+\textbf{-Ciclo 2}: 
+\begin{itemize}
+	\item Usuario 1: de los 7 modulos probados, 2 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	 \begin{itemize}
+			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
+			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
+			\item Al terminar la solicitud de inspeccion, no se muestra en el pdf las observaciones realizadas
+		  \end{itemize}
+
+	\item Usuario 2: de los 7 modulos probados, 2 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	 \begin{itemize}
+	 		\item Consultar titulares del vehiculo no funcionaba consultar por numero.
+			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
+			\item Al terminar la solicitud de inspeccion, no se muestra en el pdf las observaciones realizadas
+		  \end{itemize}
+
+	\item Usuario 3: de los 7 modulos probados, 2 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	 \begin{itemize}
+			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
+			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
+			\item Al terminar la solicitud de inspeccion, no se muestra en el pdf las observaciones realizadas
+		  \end{itemize}
+
+\end{itemize}
+
+\textbf{-Ciclo 3}: En este ciclo todos los usuarios aprobaron todas las funcionalidades del sistema de todos los módulos.
+
 \setlength{\parskip}{0mm}
 
 \subsection{Pruebas de aceptación}
 \setlength{\parskip}{5mm}
+
+
+
 \setlength{\parskip}{0mm}
