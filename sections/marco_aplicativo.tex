@@ -311,12 +311,150 @@ A continuación se presenta un listado con todas las tablas de la base de datos 
 
 \section{Descripción de los módulos del sistema y sus interfaces } 
 \setlength{\parskip}{5mm}
+El sistema web se encuentra divido en varios módulos. Los cuales están representados en la siguiente Figura.
 \setlength{\parskip}{0mm}
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth]{img/modulos_del_sistema.png}
+\end{center}
+\caption{Diagrama de módulos del sistema. Fuente:El Autor.}
+\label{fig:Modulos_del_sistema}
+\end{figure}
+
+
+\textbf{Módulos}:
+\begin{itemize}
+	\item Administración: En este modulo el usuario con perfil administrador puede configurar parámetros referentes a los usuarios del sistema.
+	
+	\item Registro: En este modulo los usuarios pueden registrarse en este sistema ya sea como usuario tipo Inspectores o Taquilla.
+	
+	\item Perfil: Este modulo le permite al usuario modificar su información de contacto registrada en el sistema.
+	
+	\item Recuperar Contraseña: En este modulo los usuarios pueden recuperar su contraseña en caso de olvidarla. 
+	
+	\item Consulta: Este modulo hace énfasis en los filtros necesarios para la búsqueda de información dentro del sistema ya sea de solicitudes, usuarios o clientes (Aquellos que trajeron el carro a inspección)
+	
+	\item Solicitud: En este modulo los tipo de usuario Taquilla, al recibir un cliente, crean una solicitud de inspección.
+	
+	\item Gestión de Solicitudes: En este modulo los tipo de usuario Inspector realizan el registro de los datos de la inspección del vehículo y la gestión de las solicitudes de inspección.
+	
+
+\end{itemize}
+
+
+\subsection{Interfaces de la aplicación}
+\setlength{\parskip}{5mm}
+
+\textbf{-Interfaz de inicio de sesión}: La figura a continuación muestra el formulario de inicio de sesión para aquellos usuarios registrados en el sistema.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=8cm,height=10cm]{img/interfaces/inicio_sesion.png}
+\end{center}
+\caption{Interfaz de Inicio de Sesión. Fuente:Print Screen.}
+\label{fig:interfaz_inicion_sesion}
+\end{figure}
+
+A partir de esta interfaz los usuarios registrados en el sistema podrán loguearse con su usuario y contraseña, en caso de no estar registrados se presenta la opción para registrarse, además se muestra la opción de recuperar contraseña en caso de que el usuario la haya olvidado
+
+\textbf{-Interfaz de recuperar contraseña}: La figura a continuación muestra el formulario de recuperación de contraseña para aquellos usuarios registrados en el sistema.
+
+%\begin{figure}
+%\begin{center}
+%	\includegraphics[width=14cm,height=8cm]{img/interfaces/recuperar_contrasena.png}
+%\end{center}
+%\caption{Interfaz de Recuperar Contraseña. Fuente:Print %Screen.}
+%\label{fig:interfaz_recuperar_contraseña}
+%\end{figure}
+
+A partir de esta interfaz los usuarios registrados en el sistema podrán recuperar su contraseña mediante el formulario incluyendo su correo y cédula. Se generara una contraseña aleatoria que sera enviada a su correo con la cual podrán acceder al sistema, para luego cambiar su contraseña a una propia.
+
+
+\textbf{-Interfaz registro de usuarios}: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=8cm]{img/interfaces/registro_usuario.png}
+\end{center}
+\caption{Interfaz de Registro de Usuarios. Fuente:Print Screen.}
+\label{fig:interfaz_registro_usuario}
+\end{figure}
+
+En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o como usuarios Taquilla, ingresando su información personal.
+
+
+\textbf{-Interfaz registro de usuarios}: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=8cm]{img/interfaces/registro_usuario.png}
+\end{center}
+\caption{Interfaz de Registro de Usuarios. Fuente:Print Screen.}
+\label{fig:interfaz_registro_usuario}
+\end{figure}
+
+En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o como usuarios Taquilla, ingresando su información personal.
+
+
+\textbf{-Interfaz Configuración de Perfil }: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=12cm,height=8cm]{img/interfaces/editar_usuario.png}
+\end{center}
+\caption{Interfaz de Configuración del Perfil de Usuario. Fuente:Print Screen.}
+\label{fig:interfaz_configuracion_usuario}
+\end{figure}
+
+En esta interfaz los usuarios pueden modificar su información personal ya sea el correo o contraseña.
+
+
+\textbf{-Interfaz Administrador Edición de Usuarios }: La figura a continuación muestra el filtro y bandeja de los usuarios registrados en el sistema.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/interfaces/bandeja_edicion_usuarios.png}
+\end{center}
+\caption{Interfaz de bandeja edición usuario por Administrador. Fuente:Print Screen.}
+\label{fig:interfaz_bandeja_edicion_usuario}
+\end{figure}
+
+En esta interfaz los usuarios pueden ser modificados, inactivados y eliminados. Inactivados siempre y cuando no tengan una solicitud de inspección en proceso y eliminado siempre y cuando no tengan ninguna solicitud asociada al mismo.
+
+
+\textbf{-Modal Inactivar Usuario }: La figura a continuación muestra el modal de confirmación para inactivar un usuario.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_inactivar_usuario.png}
+\end{center}
+\caption{Modal Inactivar Usuario. Fuente:Print Screen.}
+\label{fig:modal_confirmacion_inactivar_usuario}
+\end{figure}
+
+\textbf{-Modal Eliminar Usuario }: La figura a continuación muestra el modal de confirmación para eliminar un usuario.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/modal_eliminar_usuario.png}
+\end{center}
+\caption{Modal Eliminar Usuario. Fuente:Print Screen.}
+\label{fig:modal_confirmacion_eliminar_usuario}
+\end{figure}
+
+
+
+
+
+\setlength{\parskip}{0mm}
+
+
 
 
 \section{Fase de pruebas maybe } 
 \setlength{\parskip}{5mm}
 \setlength{\parskip}{0mm}
+
 
 \subsection{Pruebas funcionales}
 \setlength{\parskip}{5mm}
