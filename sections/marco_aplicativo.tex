@@ -5,14 +5,14 @@
 \setlength{\parskip}{5mm}
 \setlength{\parskip}{0mm}
 
+\newpage
 
 \section{Aplicación de la metodología Scrum}
 
+A continuación, en la siguiente Tabla se muestran las actividades programadas para los Sprint en pro del desarrollo del sistema. 
 \subsection{Lista de Objetivos (Pila del Producto)}
 
-
-
-\begin{table}[htb]	
+\begin{table}[H]	
 \begin{center}
 \begin{tabular}{ | m{2cm} | m{9cm}| m{3cm}| } 
  \hline
@@ -52,6 +52,24 @@
  01/03/2017 - 15/03/2017\\
  \hline
  
+
+ 
+
+
+\end{tabular}
+\caption{Pila del Producto. Fuente: El Autor.}
+\label{Tabla:15}
+\end{center}
+\end{table}	
+
+\newpage
+
+\begin{table}[H]	
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{9cm}| m{3cm}| } 
+ \hline
+ Sprint & Actividad & Fecha \\
+ \hline
  4.
  & 
  \begin{itemize}
@@ -62,8 +80,7 @@
  & 
  16/03/2017 - 31/03/2017\\
  \hline
- 
- 5. 
+  5. 
  & 
  \begin{itemize}
  	\item Desarrollo de la funcionalidad de realizar inspección
@@ -74,8 +91,7 @@
  & 
  01/04/2017 - 15/04/2017\\
  \hline
-
- 6. 
+6. 
  & 
  \begin{itemize}
  	\item Desarrollo del modulo administrativo
@@ -108,10 +124,12 @@
  \hline
 
 \end{tabular}
-\caption{Pila del Producto}
+\caption{Pila del Producto. Fuente: El Autor.}
 \label{Tabla:15}
 \end{center}
 \end{table}	
+
+
 
 
 
@@ -341,7 +359,7 @@ El sistema web se encuentra divido en varios módulos. Los cuales están represe
 
 \end{itemize}
 
-
+\newpage
 \subsection{Interfaces de la aplicación}
 \setlength{\parskip}{5mm}
 
@@ -356,13 +374,13 @@ El sistema web se encuentra divido en varios módulos. Los cuales están represe
 \end{figure}
 
 A partir de esta interfaz los usuarios registrados en el sistema podrán loguearse con su usuario y contraseña, en caso de no estar registrados se presenta la opción para registrarse, además se muestra la opción de recuperar contraseña en caso de que el usuario la haya olvidado
-
+\newpage
 \textbf{-Interfaz de recuperar contraseña}: La figura a continuación muestra el formulario de recuperación de contraseña para aquellos usuarios registrados en el sistema.
 
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=14cm,height=7cm]{img/interfaces/recuperar_contrasena.png}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/recuperar_contrasena.png}
 \end{center}
 \caption{Interfaz de Recuperar Contraseña. Fuente: Print Screen.}
 \label{fig:interfaz_recuperar_contrasena}
@@ -375,27 +393,13 @@ A partir de esta interfaz los usuarios registrados en el sistema podrán recuper
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=14cm,height=7cm]{img/interfaces/registro_usuario.png}
+	\includegraphics[width=14cm,height=6cm]{img/interfaces/registro_usuario.png}
 \end{center}
 \caption{Interfaz de Registro de Usuarios. Fuente: Print Screen.}
 \label{fig:interfaz_registro_usuario}
 \end{figure}
 
 En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o como usuarios Taquilla, ingresando su información personal.
-
-
-\textbf{-Interfaz registro de usuarios}: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
-
-\begin{figure}[H]
-\begin{center}
-	\includegraphics[width=14cm,height=8cm]{img/interfaces/registro_usuario.png}
-\end{center}
-\caption{Interfaz de Registro de Usuarios. Fuente: Print Screen.}
-\label{fig:interfaz_registro_usuario}
-\end{figure}
-
-En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o como usuarios Taquilla, ingresando su información personal.
-
 
 \textbf{-Interfaz Configuración de Perfil}: La figura a continuación muestra el formulario de registro de usuarios para aquellos usuarios no registrados en el sistema.
 
@@ -408,7 +412,7 @@ En esta interfaz los usuarios pueden registrarse bien sea como Inspectores o com
 \end{figure}
 
 En esta interfaz los usuarios pueden modificar su información personal ya sea el correo o contraseña.
-
+\newpage
 
 \textbf{-Interfaz Administrador bandeja de Usuarios}: La figura a continuación muestra el filtro y bandeja de los usuarios registrados en el sistema.
 
@@ -470,7 +474,7 @@ En esta interfaz el administrador puede cambiar tanto el nombre como el correo, 
 
 En esta interfaz el usuario Taquilla puede crear una solicitud de inspección con los datos del cliente, en caso de que el cliente exista, se llenan automáticamente al incluir la cédula. En caso de que no este el Titular se incluyen también los datos de la persona que trajo el vehículo a inspección.
 
-
+\newpage
 \textbf{-Modal crear solicitud de inspección }: La figura a continuación muestra el modal de confirmación para crear una solicitud de inspección.
 
 \begin{figure}[H]
@@ -532,7 +536,7 @@ En esta interfaz los usuarios inspector pueden registrar los datos de la inspecc
 
 En esta interfaz los usuarios inspector pueden registrar los datos del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
 
-
+\newpage
 \textbf{-Interfaz mecánica del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de condiciones generales del vehículo.
 
 \begin{figure}[H]
@@ -557,7 +561,7 @@ En esta interfaz los usuarios inspector pueden registrar los datos de las condic
 \end{figure}
 
 En esta interfaz los usuarios inspector pueden registrar los datos de la mecánica vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
-
+\newpage
 \textbf{-Interfaz accesorios del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de los accesorios vehículo.
 
 \begin{figure}[H]
@@ -595,11 +599,12 @@ En esta interfaz los usuarios inspector pueden registrar los detalles y datos de
 
 En esta interfaz los usuarios inspector pueden registrar los documentos que trajeron del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
 
+\newpage
 \textbf{-Interfaz vista previa de la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de las observaciones referente a la inspección del vehículo y una vista previa de como quedara la solicitud.
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=\textwidth,height=19cm]{img/interfaces/prev_planilla_1.png}
+	\includegraphics[width=\textwidth,height=18cm]{img/interfaces/prev_planilla_1.png}
 \end{center}
 \caption{Interfaz de la vista previa de los datos del vehículo (Parte 1). Fuente: Print Screen.}
 \label{fig:interfaz_vista_previa_vehiculo_1}
@@ -694,6 +699,7 @@ Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se 
  .\\
 
  \hline
+ 
  Recuperar Contraseña.
  & 
  \begin{itemize}
@@ -703,6 +709,22 @@ Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se 
  .\\
 
  \hline
+
+ \end{tabular}
+\caption{Instrumento evaluación módulos del sistema (Parte 1). Fuente: El autor}
+\label{Tabla:7}
+\end{center}
+\end{table}	
+
+\newpage
+
+\begin{table}[H]	
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{8cm}| m{3cm}| } 
+ \hline
+ Modulo & Funcionalidades Probadas & Resultados \\
+ \hline
+ 
 
  Consulta. 
  & 
@@ -736,13 +758,14 @@ Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se 
 
  \hline
 \end{tabular}
-\caption{Instrumento evaluación módulos del sistema. Fuente: El autor}
-\label{Tabla:6}
+\caption{Instrumento evaluación módulos del sistema (Parte 2). Fuente: El autor}
+\label{Tabla:7}
 \end{center}
 \end{table}	
 
 \setlength{\parskip}{5mm}
 
+\newpage
 Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta lograr la completa aprobación de lo módulos.
 
 \begin{table}[H]	
@@ -810,27 +833,27 @@ Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta
 
 \textbf{-Ciclo 1}: 
 \begin{itemize}
-	\item Usuario 1: de los 7 modulos probados, 4 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	\item Usuario 1: de los 7 módulos probados, 4 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
 			\item  El correo no se enviaba correctamente a los usuarios registrados.
-			\item  Campos numericos aceptaban caracteres.
-			\item  Datos de las solicitudes de inspeccion siempre se precargaban los mismos, y cuando se cambia en algun cliente se cambian en todos.
+			\item  Campos numéricos aceptaban caracteres.
+			\item  Datos de las solicitudes de inspección siempre se precargaban los mismos, y cuando se cambia en algún cliente se cambian en todos.
 			\item  Inactivar usuarios.
 		  \end{itemize}
 
-	\item Usuario 2: de los 7 modulos probados, 4 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	\item Usuario 2: de los 7 módulos probados, 4 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
 			\item  El correo no se enviaba correctamente a los usuarios registrados.
-			\item  Campos numericos aceptaban caracteres.
+			\item  Campos numéricos aceptaban caracteres.
 			\item  Inactivar usuarios.
-			\item  Datos inconsistentes en diferentes solicitudes de inspeccion.
+			\item  Datos inconsistentes en diferentes solicitudes de inspección.
 		  \end{itemize}
 
-	\item Usuario 3: de los 7 modulos probados, 4 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	\item Usuario 3: de los 7 módulos probados, 4 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
 			\item  No llega el correo al registrar el usuario
-			\item  Error en montos al colocar caractere.
-			\item  Datos de las solicitudes de inspeccion siempre se precargaban los mismos, y cuando se cambia en algun cliente se cambian en todos.
+			\item  Error en montos al colocar carácter.
+			\item  Datos de las solicitudes de inspección siempre se precargaban los mismos, y cuando se cambia en algún cliente se cambian en todos.
 			\item  Inactivar usuarios.
 		  \end{itemize}
 
@@ -838,25 +861,25 @@ Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta
 
 \textbf{-Ciclo 2}: 
 \begin{itemize}
-	\item Usuario 1: de los 7 modulos probados, 2 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	\item Usuario 1: de los 7 módulos probados, 2 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
-			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
-			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
-			\item Al terminar la solicitud de inspeccion, no se muestra en el pdf las observaciones realizadas
+			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			\item Al terminar la solicitud de inspección, no se muestra en el pdf las observaciones realizadas
 		  \end{itemize}
 
-	\item Usuario 2: de los 7 modulos probados, 2 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	\item Usuario 2: de los 7 módulos probados, 2 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
-	 		\item Consultar titulares del vehiculo no funcionaba consultar por numero.
-			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
-			\item Al terminar la solicitud de inspeccion, no se muestra en el pdf las observaciones realizadas
+	 		\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			\item Al terminar la solicitud de inspección, no se muestra en el pdf las observaciones realizadas
 		  \end{itemize}
 
-	\item Usuario 3: de los 7 modulos probados, 2 terminaron con el estatus de no aprobacion. Las funcionalidades que fallaron fueron las siguientes:
+	\item Usuario 3: de los 7 módulos probados, 2 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
-			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
-			\item Consultar titulares del vehiculo no funcionaba consultar por numero.
-			\item Al terminar la solicitud de inspeccion, no se muestra en el pdf las observaciones realizadas
+			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			\item Al terminar la solicitud de inspección, no se muestra en el pdf las observaciones realizadas
 		  \end{itemize}
 
 \end{itemize}
@@ -868,6 +891,129 @@ Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta
 \subsection{Pruebas de aceptación}
 \setlength{\parskip}{5mm}
 
+Para comprobar el nivel de aceptación del sistema, se realizo una encuesta correspondiente a las interfaces del sistema orientadas a la usabilidad. Dicha encuesta fue realizada a un grupo de diez personas. De esta manera se pudo obtener un feed back de parte de los usuarios para mejorar las interfaces del sistema.
+
+
+
+\begin{table}[H]	
+\begin{center}
+\begin{tabular}{ | m{1cm} | m{8cm}| m{1cm}|m{1cm}| m{1cm} | m{1cm}| m{1cm}| } 
+ \hline
+ \multicolumn{2}{|c|}{} & 1 & 2 & 3 & 4 & 5 \\
+ \hline
+ 1 & La aplicación es intuitiva & & & & & \\
+ \hline
+ 2 & Considera usted que los colores crean un buen contraste. & & & & & \\
+ \hline
+ 3 & El diseño y estilo de la aplicación es consistente a lo largo de sus interfaces & & & & & \\
+ \hline
+ 4 & El lenguaje usado en la aplicación es claro & & & & & \\
+ \hline
+ 5 & La aplicación ofrece mensajes acordes a las operaciones realizadas. & & & & & \\
+ \hline
+ 6 & Es posible navegar por la aplicación sin perderse & & & & & \\
+ \hline
+ 7 & La aplicación es usable & & & & & \\
+ \hline
+ 8 & Las acciones realizadas son fáciles de memorizar & & & & & \\
+ \hline
+ 9 & La aplicación muestra mensajes de errores explícitos de acuerdo al error ocurrido & & & & & \\
+ \hline
+\end{tabular}
+\caption{Encuesta de aceptación. Fuente: El Autor}
+\label{Tabla:8}
+\end{center}
+\end{table}	
+
+
+Para el desarrollo de esta encuesta se deben seleccionar valores que van desde "Totalmente en desacuerdo" hasta "Totalmente de acuerdo", estableciendo un rango de numero del 1 al 5.
+
+Los resultados de las encuestas aplicadas, para evaluar el nivel de aceptación, se pueden apreciar en las siguientes Figuras.
+
+\newpage
+\textbf{-Resultado de las encuestas}: 
+
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/aplicacion_intuitiva.png}
+\end{center}
+\caption{Resultados de la pregunta 1. Fuente: El Autor.}
+\label{fig:respuesta_aplicacion_intuitiva}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/contraste_colores.png}
+\end{center}
+\caption{Resultados de la pregunta 2. Fuente: El Autor.}
+\label{fig:respuesta_contraste_colores}
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/diseno_consistente.png}
+\end{center}
+\caption{Resultados de la pregunta 3. Fuente: El Autor.}
+\label{fig:respuesta_diseno_consistente}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/lenguaje_usado.png}
+\end{center}
+\caption{Resultados de la pregunta 4. Fuente: El Autor.}
+\label{fig:respuesta_lenguaje_usado}
+\end{figure}
+
+
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/mensajes_acordes.png}
+\end{center}
+\caption{Resultados de la pregunta 5. Fuente: El Autor.}
+\label{fig:respuesta_mensajes_acordes}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/navegar_sin_perdida.png}
+\end{center}
+\caption{Resultados de la pregunta 6. Fuente: El Autor.}
+\label{fig:respuesta_navegar_sin_perdida}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/aplicacion_usable.png}
+\end{center}
+\caption{Resultados de la pregunta 7. Fuente: El Autor.}
+\label{fig:respuesta_aplicacion_usable}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/acciones_memorizables.png}
+\end{center}
+\caption{Resultados de la pregunta 8. Fuente: El Autor.}
+\label{fig:respuesta_acciones_memorizables}
+\end{figure}
+\newpage
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=7cm]{img/encuestas/mensajes_errores_explicitos.png}
+\end{center}
+\caption{Resultados de la pregunta 9. Fuente: El Autor.}
+\label{fig:respuesta_mensajes_errores_explicitos}
+\end{figure}
+
+Con base a los resultados anteriores se puede concluir que la aplicación es bastante intuitiva, utiliza colores que crean buen contraste y haciendo la aplicación consistente entre sus interfaces, logrando así gran usabilidad. Además se puede apreciar que el lenguaje utilizado en la aplicación tanto como los mensajes de respuesta de la misma son de agrado para los usuarios aunque en parte del lenguaje de la aplicación hay ciertos tecnicismos los cuales le dan un nivel de complejidad a los mismos. Aun así por ser intuitiva, es fácil recordar las acciones realizadas.
 
 
 \setlength{\parskip}{0mm}
+
