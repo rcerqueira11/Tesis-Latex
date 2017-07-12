@@ -1,8 +1,29 @@
 \chapter{Marco Aplicativo}
+\setlength{\parskip}{5mm}
+A continuación, para el siguiente capitulo se presenta una descripción general de la solución en conjunto con las respectivas tecnologías utilizadas para su elaboración. Además se detalla la metodología de desarrollo SCRUM que se aplico para la elaboración de este proyecto, así como los diferentes requerimientos, perfiles de usuarios que interactúan con el sistema, explicación de las interfaces de la aplicación y las pruebas realizadas que contribuyeron a un mejor desempeño y una mayor aceptación de la aplicación. 
 
+\setlength{\parskip}{0mm}
 
 \section{Descripción general de la solución} 
 \setlength{\parskip}{5mm}
+
+En el presente trabajo especial de grado se desarrolló un sistema con tecnologías web, en el cual los usuarios pueden gestionar las solicitudes de inspección, tanto generar las solicitudes, registrar los resultados de la inspección y convalidar las mismas. Logrando así una persistencia digital de las solicitudes para una mejor administración de la información.
+
+Para ello se propone el desarrollo de la siguiente arquitectura con las siguientes tecnologías:
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=15cm,height=8cm]{img/con_tecnologia1.png}
+\end{center}
+\caption{Arquitectura Propuesta. Fuente: El Autor.}
+\label{fig:Con_Tec}
+\end{figure}
+
+Para la base de datos utilizaremos PostgreSQL, ya que es una de las bases de datos mas potentes de software libre, con un alto rendimiento, seguridad y a su vez estar disponible prácticamente para todas las versiones de los sistemas operativos Unix y también Windows. Su versatilidad y robustez la hace el candidato perfecto para el sistema que se busca implementar.
+
+Se propone utilizar el framework de Django para el desarrollo del sistema. Ya que siendo uno de los muchos frameworks que están establecidos sobre la base del patrón MVC en sus beneficios se encuentra la separación de responsabilidad y organización del código. Este framework incorpora un patrón llamado MTV (Modelo-Template-Vista), los templates son donde se implementan todas las interfaces de los usuarios, que serán desplegadas por las vistas en el lado del servidor y los mídeles corresponde a la base da datos donde persistirá la información. Además posee un sistema jerárquico de plantilla que proporciona la reutilización de código y la extensibilidad de las aplicaciones. Posee un buen soporte para PostgresSQL, la base de datos que se piensa utilizar para el sistema. 
+
+
 \setlength{\parskip}{0mm}
 
 \newpage
@@ -472,7 +493,7 @@ En esta interfaz el administrador puede cambiar tanto el nombre como el correo, 
 \label{fig:interfaz_crear_solicitud_inspeccion}
 \end{figure}
 
-En esta interfaz el usuario Taquilla puede crear una solicitud de inspección con los datos del cliente, en caso de que el cliente exista, se llenan automáticamente al incluir la cédula. En caso de que no este el Titular se incluyen también los datos de la persona que trajo el vehículo a inspección.
+En esta interfaz el usuario Taquilla puede crear una solicitud de inspección con los datos del cliente dando este el numero de solicitud de inspección, en caso de que el cliente exista, se llenan automáticamente al incluir la cédula. En caso de que no este el Titular se incluyen también los datos de la persona que trajo el vehículo a inspección.
 
 \newpage
 \textbf{-Modal crear solicitud de inspección }: La figura a continuación muestra el modal de confirmación para crear una solicitud de inspección.
