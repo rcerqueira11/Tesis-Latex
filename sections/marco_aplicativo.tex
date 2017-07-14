@@ -146,7 +146,7 @@ A continuación, en la siguiente Tabla se muestran las actividades programadas p
 
 \end{tabular}
 \caption{Pila del Producto. Fuente: El Autor.}
-\label{Tabla:15}
+\label{Tabla:16}
 \end{center}
 \end{table}	
 
@@ -251,21 +251,48 @@ Además se realizó el diseño y maquetado de la aplicación, a partir de los co
 
 \subsection{Proceso de creación de solicitud}
 \setlength{\parskip}{5mm}
-\setlength{\parskip}{0mm}
 
-\subsection{Proceso de llenado de planilla de inspección}
-\setlength{\parskip}{5mm}
+%\begin{figure}[H]
+%\begin{center}
+%	\includegraphics[width=\textwidth]{img/diagramas/proceso_creacion_solicitud_inspeccion.png}
+%\end{center}
+%\caption{Proceso de creación de solicitud de inspección. Fuente:El Autor.}
+%\label{fig:proceso_creacion_solicitud_inspeccion}
+%\end{figure}
+
+De acuerdo a la Figura anterior, cuando un cliente desea realizar una solicitud de inspección, este indica su numero de orden al personal de la Taquilla, esta persona se encarga de llenar el formulario para la apertura de una solicitud de inspección, llenando el numero de orden (numero de solicitud), placa del carro, motivo de la visita, cédula, nombre, apellido y numero de teléfono, en caso de que el titular no este presente se llenan los datos de la persona que trajo el vehículo a inspeccionar. Luego de ello esta solicitud es guardada y el cliente debe esperar a que un perito lo llame para realizar la inspección.
+
+Listado de excepciones:
+
+- Si el usuario ingreso algún dato erróneo, puede cancelar dicha solicitud y apertura una nueva.
+
+- Si el cliente tuvo alguna emergencia o impedimento para realizar la inspección dicha solicitud puede ser cancelada.
+
 \setlength{\parskip}{0mm}
 
 \subsection{Proceso de gestión de solicitud de inspección}
 \setlength{\parskip}{5mm}
+
+Este proceso esta divido en dos partes, las cuales se muestran en la figura a continuación.
+
+
+%\begin{figure}[H]
+%\begin{center}
+%	\includegraphics[width=\textwidth]{img/diagramas/proceso_solicitud_inspeccion.png}
+%\end{center}
+%\caption{Proceso de gestión de solicitud de inspección. Fuente:El Autor.}
+%\label{fig:proceso_solicitud_inspeccion}
+%\end{figure}
+
+
+Cuando un usuario Inspector, desea registrar los resultados de una inspección, este se dirige al sistema, ingresa a la bandeja de solicitudes y elije la cual acaba de completar el perito registra los datos del vehículo, sus detalles mecánicos, accesorios, condiciones generales y documentos presentados al momento de la inspección. Luego de esto valida la información con el cliente y este al dar el visto bueno la solicitud pasa a estado por gestionar, en caso de alguna disconformidad con el cliente se realiza el proceso de inspección hasta que el cliente este satisfecho con la inspección. Mas adelante esta solicitud es gestionada, revisando los datos registrados y validando que todo este correcto, en caso de querer hacer un cambio se puede realizar, luego de ello el Inspector verifica los datos una ultima vez antes de cerrar la solicitud.
 \setlength{\parskip}{0mm}
 
 
 \section{Análisis del modelo de datos y definición} 
 \setlength{\parskip}{5mm}
 
-En la elaboracion del modelo de datos pertenecientes a la aplicacion se crearon un total de veintiocho (28) tablas.
+En la elaboración del modelo de datos pertenecientes a la aplicación se crearon un total de veintiocho (28) tablas.
 
 \setlength{\parskip}{0mm}
 
@@ -335,18 +362,19 @@ A continuación se presenta un listado con todas las tablas de la base de datos 
 
 \setlength{\parskip}{0mm}
 
+%\subsection{Modelo de datos}
+%\setlength{\parskip}{5mm}
 
+%\begin{figure}[H]
+%\begin{center}
+	%\includegraphics[width=\textwidth]{img/diagramas/modelo_de_datos.png}
+%\end{center}
+%\caption{Modelo de datos de la aplicación. Fuente:El Autor.}
+%\label{fig:modelo_datos_de_la_aplicacion}
+%\end{figure}
 
-
-
-\subsection{Modelo de datos}
-\setlength{\parskip}{5mm}
 \setlength{\parskip}{0mm}
 
-
-\section{Servicios web maybe} 
-\setlength{\parskip}{5mm}
-\setlength{\parskip}{0mm}
 
 \section{Descripción de los módulos del sistema y sus interfaces } 
 \setlength{\parskip}{5mm}
@@ -558,7 +586,7 @@ En esta interfaz los usuarios inspector pueden registrar los datos de la inspecc
 En esta interfaz los usuarios inspector pueden registrar los datos del vehículo de la inspección realizada. También dicha interfaz sirve para la gestión de la solicitud, mostrando los datos anteriormente cargados para su ultima revisión.
 
 \newpage
-\textbf{-Interfaz mecánica del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de condiciones generales del vehículo.
+\textbf{-Interfaz condiciones generales del vehículo en la solicitud de inspección}: La figura a continuación muestra el formulario para el registro de los datos de condiciones generales del vehículo.
 
 \begin{figure}[H]
 \begin{center}
@@ -695,8 +723,8 @@ Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se 
  Administración. 
  & 
  \begin{itemize}
- 	\item Modificacion de Usuarios.
- 	\item Modificacion de Clientes.
+ 	\item Modificación de Usuarios.
+ 	\item Modificación de Clientes.
  \end{itemize}. 
  & 
  .\\
@@ -762,7 +790,7 @@ Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se 
  Solicitud. 
  & 
  \begin{itemize}
- 	\item Realizar solicitud de inspección
+ 	\item Realizar solicitud de inspección.
  \end{itemize}. 
  & 
  .\\
@@ -780,7 +808,7 @@ Para estas pruebas se realizo una tabla mostrada a continuación, en la cual se 
  \hline
 \end{tabular}
 \caption{Instrumento evaluación módulos del sistema (Parte 2). Fuente: El autor}
-\label{Tabla:7}
+\label{Tabla:9}
 \end{center}
 \end{table}	
 
@@ -847,7 +875,7 @@ Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta
  \hline
 \end{tabular}
 \caption{Matriz de ciclos de pruebas. Fuente: El autor}
-\label{Tabla:7}
+\label{Tabla:10}
 \end{center}
 \end{table}
 
