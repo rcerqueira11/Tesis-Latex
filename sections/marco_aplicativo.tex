@@ -11,6 +11,7 @@ En el presente trabajo especial de grado se desarrolló un sistema con tecnolog�
 
 Para ello se propone el desarrollo de la siguiente arquitectura con las siguientes tecnologías:
 
+\newpage
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=15cm,height=8cm]{img/con_tecnologia1.png}
@@ -252,13 +253,13 @@ Además se realizó el diseño y maquetado de la aplicación, a partir de los co
 \subsection{Proceso de creación de solicitud}
 \setlength{\parskip}{5mm}
 
-%\begin{figure}[H]
-%\begin{center}
-%	\includegraphics[width=\textwidth]{img/diagramas/proceso_creacion_solicitud_inspeccion.png}
-%\end{center}
-%\caption{Proceso de creación de solicitud de inspección. Fuente:El Autor.}
-%\label{fig:proceso_creacion_solicitud_inspeccion}
-%\end{figure}
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth]{img/diagramas/proceso_creacion_solicitud_inspeccion.png}
+\end{center}
+\caption{Proceso de creación de solicitud de inspección. Fuente:El Autor.}
+\label{fig:proceso_creacion_solicitud_inspeccion}
+\end{figure}
 
 De acuerdo a la Figura anterior, cuando un cliente desea realizar una solicitud de inspección, este indica su numero de orden al personal de la Taquilla, esta persona se encarga de llenar el formulario para la apertura de una solicitud de inspección, llenando el numero de orden (numero de solicitud), placa del carro, motivo de la visita, cédula, nombre, apellido y numero de teléfono, en caso de que el titular no este presente se llenan los datos de la persona que trajo el vehículo a inspeccionar. Luego de ello esta solicitud es guardada y el cliente debe esperar a que un perito lo llame para realizar la inspección.
 
@@ -270,19 +271,20 @@ Listado de excepciones:
 
 \setlength{\parskip}{0mm}
 
+\newpage
 \subsection{Proceso de gestión de solicitud de inspección}
 \setlength{\parskip}{5mm}
 
 Este proceso esta divido en dos partes, las cuales se muestran en la figura a continuación.
 
 
-%\begin{figure}[H]
-%\begin{center}
-%	\includegraphics[width=\textwidth]{img/diagramas/proceso_solicitud_inspeccion.png}
-%\end{center}
-%\caption{Proceso de gestión de solicitud de inspección. Fuente:El Autor.}
-%\label{fig:proceso_solicitud_inspeccion}
-%\end{figure}
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth,height=17cm]{img/diagramas/proceso_gestion_solicitud.png}
+\end{center}
+\caption{Proceso de gestión de solicitud de inspección. Fuente:El Autor.}
+\label{fig:proceso_solicitud_inspeccion}
+\end{figure}
 
 
 Cuando un usuario Inspector, desea registrar los resultados de una inspección, este se dirige al sistema, ingresa a la bandeja de solicitudes y elije la cual acaba de completar el perito registra los datos del vehículo, sus detalles mecánicos, accesorios, condiciones generales y documentos presentados al momento de la inspección. Luego de esto valida la información con el cliente y este al dar el visto bueno la solicitud pasa a estado por gestionar, en caso de alguna disconformidad con el cliente se realiza el proceso de inspección hasta que el cliente este satisfecho con la inspección. Mas adelante esta solicitud es gestionada, revisando los datos registrados y validando que todo este correcto, en caso de querer hacer un cambio se puede realizar, luego de ello el Inspector verifica los datos una ultima vez antes de cerrar la solicitud.
@@ -355,25 +357,29 @@ A continuación se presenta un listado con todas las tablas de la base de datos 
 
 \textbf{-rcs\_vehiculo\_mecanica\_vehiculo}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_mecanicavehiculo y vehículo.
 
+\textbf{-rcs\_\_mecanica\_vehiculo}: Tabla utilizada para representar las relaciones ManyToMany de rcs\_mecanicavehiculo y vehículo.
+
 \textbf{-django\_migrations}: Permite almacenar y llevar un control de las migraciones aplicadas para cambiar la base de datos a lo largo del proceso de desarrollo.
 
 \textbf{-django\_session}: Permite almacenar todos los valores usados en la sesión de los usuarios dentro de la aplicación.
 
-
 \setlength{\parskip}{0mm}
 
-%\subsection{Modelo de datos}
-%\setlength{\parskip}{5mm}
+\newpage
 
-%\begin{figure}[H]
-%\begin{center}
-	%\includegraphics[width=\textwidth]{img/diagramas/modelo_de_datos.png}
-%\end{center}
-%\caption{Modelo de datos de la aplicación. Fuente:El Autor.}
-%\label{fig:modelo_datos_de_la_aplicacion}
-%\end{figure}
 
-\setlength{\parskip}{0mm}
+\subsection{Modelo de datos}
+\setlength{\parskip}{5mm}
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=\textwidth, height=18cm]{img/modelado/modelo_4.jpg}
+\end{center}
+\caption{Modelo de datos de la aplicación. Fuente:El Autor.}
+\label{fig:modelo_datos_de_la_aplicacion}
+\end{figure}
+
+\newpage
 
 
 \section{Descripción de los módulos del sistema y sus interfaces } 
@@ -912,21 +918,21 @@ Las pruebas presentadas en esta tabla se fueron realizando mediante ciclos hasta
 \begin{itemize}
 	\item Usuario 1: de los 7 módulos probados, 2 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
-			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+		
 			\item Consultar titulares del vehículo no funcionaba consultar por numero.
 			\item Al terminar la solicitud de inspección, no se muestra en el pdf las observaciones realizadas
 		  \end{itemize}
 
 	\item Usuario 2: de los 7 módulos probados, 2 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
-	 		\item Consultar titulares del vehículo no funcionaba consultar por numero.
+	 		
 			\item Consultar titulares del vehículo no funcionaba consultar por numero.
 			\item Al terminar la solicitud de inspección, no se muestra en el pdf las observaciones realizadas
 		  \end{itemize}
 
 	\item Usuario 3: de los 7 módulos probados, 2 terminaron con el estatus de no aprobación. Las funcionalidades que fallaron fueron las siguientes:
 	 \begin{itemize}
-			\item Consultar titulares del vehículo no funcionaba consultar por numero.
+			
 			\item Consultar titulares del vehículo no funcionaba consultar por numero.
 			\item Al terminar la solicitud de inspección, no se muestra en el pdf las observaciones realizadas
 		  \end{itemize}
