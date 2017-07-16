@@ -7,7 +7,9 @@
 \usepackage[pdftex]{color,graphicx}
 \usepackage[nottoc]{tocbibind}
 \usepackage{babelbib}
-\usepackage{natbib}
+%\usepackage{natbib}
+\usepackage[natbibapa]{apacite}
+%\usepackage{apacite}
 \usepackage{fullpage}
 \usepackage{caption}
 \usepackage{color, colortbl}
@@ -16,6 +18,7 @@
 \usepackage{float}
 \usepackage{ragged2e}
 \setcounter{tocdepth}{4}
+\usepackage{breakcites}
 \setcounter{secnumdepth}{4}
 \restylefloat{table}
 %\setlength{\parskip}{8mm}
@@ -64,7 +67,8 @@
 
 
 \renewcommand{\bibname}{BIBLIOGRAFÍA}
-\bibliographystyle{plainnat}
+%\bibliographystyle{plainnat}
+\bibliographystyle{apacite}
 \bibliography{bibliografia.bib}
 
 \end{document}
