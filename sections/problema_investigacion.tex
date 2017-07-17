@@ -3,7 +3,9 @@
 
 \section{Situación actual} 
 
+Hoy en día el mercado asegurador Venezolano, para poder competir con posee una gran necesidad de adaptarse a las nuevas tecnologías y desarrollar un proceso de 
 
+Actualmente, el proceso de inspección se encuentra realizándose de manera los documentos generados mediante este proceso son físicos por lo cual su persistencia e integridad se ve afectada por el ambiente en donde se resguarden luego de la inspección. Es por ello que con frecuencia se buscan soluciones alternativas que puedan cumplir con el objetivo, de tal manera que se pueda optimizar este proceso, utilizando las tecnologías actuales que estén al alcance de las 
 
 \section{Planteamiento del problema} 
 \setlength{\parskip}{5mm}
@@ -26,6 +28,20 @@ El procesos presenta una serie de inconveniente en cuando a la persistencia de l
 
 Ante la situación descrita, se plantea elaborar una solución con tecnología Web, que permita a los peritos, mantener un registro digital de las planillas de inspección de los vehículos.
 
+Para ello se propone el desarrollo de la siguiente arquitectura con las siguientes tecnologías:
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=15cm,height=8cm]{img/con_tecnologia1.png}
+\end{center}
+\caption{Arquitectura Propuesta. Fuente: El Autor.}
+\label{fig:Con_Tec_propuesta}
+\end{figure}
+
+Para la base de datos utilizaremos PostgreSQL, ya que es una de las bases de datos mas potentes de software libre, con un alto rendimiento, seguridad y a su vez estar disponible prácticamente para todas las versiones de los sistemas operativos Unix y también Windows. Su versatilidad y robustez la hace el candidato perfecto para el sistema que se busca implementar.
+
+Se propone utilizar el framework de Django para el desarrollo del sistema. Ya que siendo uno de los muchos frameworks que están establecidos sobre la base del patrón MVC en sus beneficios se encuentra la separación de responsabilidad y organización del código. Este framework incorpora un patrón llamado MTV (Modelo-Template-Vista), los templates son donde se implementan todas las interfaces de los usuarios, que serán desplegadas por las vistas en el lado del servidor y los mídeles corresponde a la base da datos donde persistirá la información. Además posee un sistema jerárquico de plantilla que proporciona la reutilización de código y la extensibilidad de las aplicaciones. Posee un buen soporte para PostgresSQL, la base de datos que se piensa utilizar para el sistema. 
 
 
 % Recibirá mediante un web service la información de la planilla y que esta pueda ser editada una vez antes de aceptar y guardarla en el sistema
@@ -74,14 +90,19 @@ Desarrollar una solución para el proceso de inspección de vehículos en una co
 	% \item Implementar funcionalidades del sistema.
 	% % \item Diseñar e implementar un sistema de registro.
 
-   \item Análisis de especificaciones del proceso de inspección de vehículos para suscripción
+   \item Analizar especificaciones del proceso de inspección de vehículos para suscripción.
 
-   \item Diseño del modelo de datos, de las interfaces y de los componentes de los módulos del sistema
+   \item Diseñar modelo de datos, de las interfaces y de los componentes de los módulos del sistema.
 
-   \item Desarrollo del sistema
+   \item Desarrollar componentes diseñados.
 
-   \item Pruebas funcionales y de usabilidad
+   \item Realizar pruebas de funcionalidad y de usabilidad.
 	
+	
+
+
+
+
 	
 
 \end{itemize}
